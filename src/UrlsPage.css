@@ -1,0 +1,41 @@
+/* Make the page take full height */
+.urls-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 10px 0;
+}
+
+.table-container {
+  flex: 1; /* Makes the table take all the remaining space */
+  overflow: auto; /* Allows scrolling when content overflows */
+}
+
+.urls-table {
+  width: 100%; /* Table takes full width of the container */
+  border-collapse: collapse;
+  table-layout: fixed; /* Forces the table to take the full width */
+}
+
+.urls-table th,
+.urls-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.urls-table th {
+  background-color: #f4f4f4;
+}
+
+.urls-table button {
+  margin-right: 10px;
+}
